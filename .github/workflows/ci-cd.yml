@@ -26,7 +26,7 @@ jobs:
           cache: maven
 
       - name: print variables
-        run: echo "${{ env.DB_USERNAME }}, {{ env.DB_PASSWORD }}"
+        run: echo "${{ env.DB_USERNAME }}, ${{ env.DB_PASSWORD }}"
 
       - name: build
         run: |
